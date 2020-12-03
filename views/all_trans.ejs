@@ -1,0 +1,44 @@
+<%- include('header'); -%>
+
+<div class="col-md-9" style="margin: auto; margin-top: 3%; margin-bottom: 3%;">
+    <div class="card shadow">
+        <div class="card-body">
+            <div class="all_cust-head">
+                <h2>Name : <%=primary_name%></h2>
+                <div class="bal">
+                    <h4 style="text-shadow: 1px 1px 1px rgb(219, 211, 211);">Balance : ₹<%=primary_bal%></h4>
+                </div>
+                <a role="button" class="btn btn-info" href="/all_cust">All Customers <i class="fas fa-user-friends"></i></a>
+                <h4 style="margin-top: 2%;">All Transactions</h4>
+            </div>
+            <div class="table-div">
+
+                <table class="table display table-bordered table-striped nowrap">
+                    <thead>
+                        <tr>
+                            <th scope="col">Trans ID</th>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Email ID</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Timestamp</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%for(var i = 0;i<rows.length;i++){%>
+                        <tr>
+                            <th scope="col"><%=i+1%></th>
+                            <th scope="col"><%=rows[i].Name%></th>
+                            <th scope="col"><%=rows[i].email%></th>
+                            <th scope="col"><%=rows[i].amount%></th>
+                            <th scope="col"><%=rows[i].time_stamp%></th>
+                        </tr>
+                        <%}%>
+                        </tbody>
+                    </table>
+                </div>
+    </div>
+  </div>
+</div>
+
+
+<%- include('footer'); -%>

@@ -1,0 +1,89 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #070d59;
+}
+.nav-btn{
+    border-radius: 0;
+    font-weight: 600;
+    margin-left: 85%;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+}
+@keyframes fade-in{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.home-img{
+    margin-left: 45%;
+    padding-top: 5%;
+    margin-bottom: 0;
+    animation-name: fade-in;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+@keyframes left_in{
+    0% {left: 0%;}
+    12% {left:1.25%}
+    25% {left:2.5%;}
+    37% {left:3.75}
+    50% {left:5%;}
+    62% {left:6.25%}
+    75% {left:7.5%}
+    87% {left:8.75%}
+    100% {left:10%}
+}
+.home-text{
+    position: absolute;
+    color: aliceblue;
+    text-align: center;
+    animation-name: fade-in;
+    top: 45%;
+    left: 10%;
+    line-height: 1.8rem;
+    animation-duration: 350ms;
+    animation-delay: 100ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+.home-btn{
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.home-inner-text{
+    margin-bottom: 15px;
+}
+
+.card{
+    border-radius: 0;
+}
+
+.all_cust-head{
+    text-align: center;
+}
+
+.bal{
+    margin-bottom: 2%;
+    color: rgb(52, 212, 73);
+}
+.btn-div{
+    margin-bottom: 2%;
+}
+table{
+    margin-top: 2%;
+}
+.btn{
+    font-weight: 500;
+}
+
+.table-div{
+    padding-left: 5%;
+    padding-right: 5%;
+}
