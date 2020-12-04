@@ -2,17 +2,17 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const mysql = require("mysql");
-
+require('dotenv').config()
 
 //Configure View Engine
 app.set('view engine', 'ejs');
 
 //Establishing Connection to database
 var connection = mysql.createConnection({
-    host: "sql12.freemysqlhosting.net",
-    user: "sql12380101",
-    password: "sql123",
-    database: "sql12380101",
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB,
     dateStrings: 'date'
 });
 
