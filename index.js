@@ -9,10 +9,10 @@ app.set('view engine', 'ejs');
 
 //Establishing Connection to database
 var connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
+    host: "sql12.freemysqlhosting.net",
+    user: "sql12380101",
     password: "sql123",
-    database: "bank_mgmt",
+    database: "sql12380101",
     dateStrings: 'date'
 });
 
